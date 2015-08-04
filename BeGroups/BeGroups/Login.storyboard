@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Pam-be-bxi">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="J3U-z8-446">
+            <objects>
+                <viewController id="Pam-be-bxi" customClass="LoginViewController" customModule="BeGroups" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GnE-lG-YSz"/>
+                        <viewControllerLayoutGuide type="bottom" id="gHw-fh-aFg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="axS-Mz-bWU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-white" translatesAutoresizingMaskIntoConstraints="NO" id="o4z-65-BoN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLy-bu-EQE">
+                                <rect key="frame" x="171" y="271" width="257" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="v36-ku-qF0"/>
+                                    <constraint firstAttribute="height" constant="30" id="zfI-2w-3CE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="U S E R N A M E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrW-O4-jPD">
+                                <rect key="frame" x="172" y="242" width="257" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="Jvb-YR-7q8"/>
+                                    <constraint firstAttribute="height" constant="21" id="U2f-Va-n6T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.95686274509803915" green="0.36470588235294116" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="P A S S W O R D" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zP7-qw-aAq">
+                                <rect key="frame" x="171" y="316" width="257" height="24"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="6DN-R8-8rt"/>
+                                    <constraint firstAttribute="width" constant="257" id="PDj-7U-1lh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.95686274509803915" green="0.36470588235294116" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kBU-w2-isf">
+                                <rect key="frame" x="172" y="345" width="257" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="1zp-Le-i9B"/>
+                                    <constraint firstAttribute="height" constant="30" id="dlV-he-d4p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kl8-Cm-mtE">
+                                <rect key="frame" x="172" y="394" width="257" height="51"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.16078431369999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="1dH-rM-kja"/>
+                                    <constraint firstAttribute="width" constant="257" id="J40-c0-zFG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSignIn:" destination="Pam-be-bxi" eventType="touchUpInside" id="Ot6-2T-yNn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGj-gD-G80">
+                                <rect key="frame" x="172" y="472" width="257" height="51"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.16078431369999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Syv-G3-1xP"/>
+                                    <constraint firstAttribute="width" constant="257" id="U8v-wu-C9F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <state key="normal" title="Login with facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookButtonTapped:" destination="Pam-be-bxi" eventType="touchUpInside" id="rkI-qq-CnT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMZ-Ys-XZC">
+                                <rect key="frame" x="374" y="550" width="55" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="PR1-f6-9PG"/>
+                                    <constraint firstAttribute="height" constant="30" id="zZa-Xk-SVZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" red="0.058823529411764705" green="0.75294117647058822" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cql-Tr-WmA" kind="presentation" id="svv-7C-epo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Hexagon" translatesAutoresizingMaskIntoConstraints="NO" id="Opo-SF-ATq">
+                                <rect key="frame" x="235" y="74" width="130" height="140"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Opo-SF-ATq" secondAttribute="height" multiplier="1:1" constant="-10" id="IgI-qx-l1i"/>
+                                    <constraint firstAttribute="width" constant="130" id="nY7-am-2ca"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DON'T HAVE AN ACOUNT?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSH-BG-MZ0">
+                                <rect key="frame" x="172" y="554" width="214" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="L0W-PP-pn3"/>
+                                    <constraint firstAttribute="width" constant="214" id="j3o-2y-sGT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hi-Z5-F3q">
+                                <rect key="frame" x="172" y="300" width="257" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="3ux-ff-15h"/>
+                                    <constraint firstAttribute="width" constant="257" id="MnM-rG-a2G"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMQ-ZR-0yF">
+                                <rect key="frame" x="172" y="374" width="257" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="XFr-Pd-ct6"/>
+                                    <constraint firstAttribute="width" constant="257" id="caz-zN-e6C"/>
+                                    <constraint firstAttribute="height" constant="1" id="pxk-es-H81"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="257" id="yqY-OM-j0Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NGj-gD-G80" firstAttribute="top" secondItem="Kl8-Cm-mtE" secondAttribute="bottom" constant="27" id="3TW-XX-dWK"/>
+                            <constraint firstItem="Opo-SF-ATq" firstAttribute="top" relation="lessThanOrEqual" secondItem="GnE-lG-YSz" secondAttribute="bottom" constant="80" id="4XR-JL-lLc"/>
+                            <constraint firstItem="aLy-bu-EQE" firstAttribute="top" secondItem="VrW-O4-jPD" secondAttribute="bottom" constant="8" id="7bW-rv-dFx"/>
+                            <constraint firstItem="gHw-fh-aFg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PMZ-Ys-XZC" secondAttribute="bottom" constant="20" id="IA7-KL-TnK"/>
+                            <constraint firstAttribute="centerX" secondItem="zP7-qw-aAq" secondAttribute="centerX" id="M0G-Pz-hgL"/>
+                            <constraint firstAttribute="centerX" secondItem="aLy-bu-EQE" secondAttribute="centerX" id="Nyx-6X-0oE"/>
+                            <constraint firstItem="VMQ-ZR-0yF" firstAttribute="top" secondItem="kBU-w2-isf" secondAttribute="bottom" constant="-1" id="OfR-7V-Dff"/>
+                            <constraint firstItem="kBU-w2-isf" firstAttribute="top" secondItem="zP7-qw-aAq" secondAttribute="bottom" constant="5" id="SoB-S0-C9g"/>
+                            <constraint firstItem="o4z-65-BoN" firstAttribute="top" secondItem="axS-Mz-bWU" secondAttribute="topMargin" id="UKg-y9-Piz"/>
+                            <constraint firstAttribute="centerX" secondItem="Kl8-Cm-mtE" secondAttribute="centerX" id="V4O-3V-FqE"/>
+                            <constraint firstAttribute="centerX" secondItem="VMQ-ZR-0yF" secondAttribute="centerX" id="Y9y-Oc-hNE"/>
+                            <constraint firstItem="gHw-fh-aFg" firstAttribute="top" secondItem="o4z-65-BoN" secondAttribute="bottom" id="aYX-ad-5hd"/>
+                            <constraint firstAttribute="centerX" secondItem="kBU-w2-isf" secondAttribute="centerX" id="blh-Ef-1VP"/>
+                            <constraint firstAttribute="centerX" secondItem="kBU-w2-isf" secondAttribute="centerX" id="ete-vJ-DX0"/>
+                            <constraint firstAttribute="centerX" secondItem="VrW-O4-jPD" secondAttribute="centerX" id="hQJ-CV-T27"/>
+                            <constraint firstItem="PMZ-Ys-XZC" firstAttribute="top" secondItem="NGj-gD-G80" secondAttribute="bottom" constant="27" id="iF0-dn-Saz"/>
+                            <constraint firstAttribute="centerX" secondItem="0hi-Z5-F3q" secondAttribute="centerX" id="jv5-Ug-Usq"/>
+                            <constraint firstItem="VrW-O4-jPD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Opo-SF-ATq" secondAttribute="bottom" constant="28" id="mgq-Yl-mnU"/>
+                            <constraint firstItem="wSH-BG-MZ0" firstAttribute="leading" secondItem="NGj-gD-G80" secondAttribute="leading" id="p6t-aI-9Su"/>
+                            <constraint firstItem="zP7-qw-aAq" firstAttribute="top" secondItem="aLy-bu-EQE" secondAttribute="bottom" constant="15" id="qkL-Z0-3Wl"/>
+                            <constraint firstAttribute="centerX" secondItem="NGj-gD-G80" secondAttribute="centerX" id="rMa-W1-p6w"/>
+                            <constraint firstItem="0hi-Z5-F3q" firstAttribute="top" secondItem="aLy-bu-EQE" secondAttribute="bottom" constant="-1" id="s0c-ZM-8rJ"/>
+                            <constraint firstItem="gHw-fh-aFg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wSH-BG-MZ0" secondAttribute="bottom" constant="25" id="sE0-or-pUS"/>
+                            <constraint firstItem="PMZ-Ys-XZC" firstAttribute="trailing" secondItem="NGj-gD-G80" secondAttribute="trailing" id="sQ2-dn-OJB"/>
+                            <constraint firstAttribute="centerX" secondItem="Opo-SF-ATq" secondAttribute="centerX" id="tob-J4-dgb"/>
+                            <constraint firstItem="wSH-BG-MZ0" firstAttribute="top" secondItem="NGj-gD-G80" secondAttribute="bottom" constant="31" id="wOz-3X-THV"/>
+                            <constraint firstItem="Kl8-Cm-mtE" firstAttribute="top" secondItem="kBU-w2-isf" secondAttribute="bottom" constant="19" id="wdb-5t-xHc"/>
+                            <constraint firstItem="o4z-65-BoN" firstAttribute="leading" secondItem="axS-Mz-bWU" secondAttribute="leadingMargin" constant="-16" id="x8h-Nk-DfY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o4z-65-BoN" secondAttribute="trailing" constant="-16" id="z3l-iK-laD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ete-vJ-DX0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonFacebookLogin" destination="NGj-gD-G80" id="ebD-qs-suM"/>
+                        <outlet property="buttonSignIn" destination="Kl8-Cm-mtE" id="xTx-iA-J3B"/>
+                        <outlet property="textFieldPassword" destination="kBU-w2-isf" id="R9L-Cu-e9L"/>
+                        <outlet property="textFieldUsername" destination="aLy-bu-EQE" id="NY1-RO-lPg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQ2-o6-J17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="190"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="EyW-bN-q8d">
+            <objects>
+                <viewController id="Cql-Tr-WmA" customClass="RegisterViewController" customModule="BeGroups" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lHj-OA-5nJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kzV-Nt-r9e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uBQ-gg-ZSU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-white" translatesAutoresizingMaskIntoConstraints="NO" id="3EF-bv-A3X">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W E L C O M E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE3-SU-KpH">
+                                <rect key="frame" x="207" y="49" width="187" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="dOG-6I-bLY"/>
+                                    <constraint firstAttribute="height" constant="21" id="dec-vh-lh6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
+                                <color key="textColor" red="0.95686274509803915" green="0.36470588235294116" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="U S E R N A M E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O35-Os-dDK">
+                                <rect key="frame" x="169" y="124" width="257" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6h3-wP-7id"/>
+                                    <constraint firstAttribute="width" constant="257" id="NzH-nh-lGF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.36470588240000001" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="E M A I L" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLF-8C-OyA">
+                                <rect key="frame" x="169" y="198" width="257" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PdH-c7-6SI"/>
+                                    <constraint firstAttribute="width" constant="257" id="ZYo-aY-z0t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.36470588240000001" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="P A S S W O R D" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUE-s6-FuX">
+                                <rect key="frame" x="169" y="272" width="257" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="QIN-sD-R2x"/>
+                                    <constraint firstAttribute="height" constant="21" id="ibK-wJ-9aD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.36470588240000001" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cJ1-BX-Xd3">
+                                <rect key="frame" x="169" y="153" width="257" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="2Xw-IM-6tI"/>
+                                    <constraint firstAttribute="height" constant="30" id="zON-ff-WPI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4cU-qi-1d0">
+                                <rect key="frame" x="169" y="227" width="257" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="82z-9L-AmW"/>
+                                    <constraint firstAttribute="height" constant="30" id="N4k-VE-NFO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gL5-qF-wsT">
+                                <rect key="frame" x="169" y="301" width="257" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PFf-Wp-zrA"/>
+                                    <constraint firstAttribute="width" constant="257" id="fim-iV-yM8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirm password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bH1-Vr-Kv1">
+                                <rect key="frame" x="169" y="346" width="257" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="bpo-RI-U7f"/>
+                                    <constraint firstAttribute="height" constant="30" id="o9g-1z-JBh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jzq-5v-lYr">
+                                <rect key="frame" x="169" y="395" width="257" height="51"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.16078431369999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="LIi-Cd-fIP"/>
+                                    <constraint firstAttribute="width" constant="257" id="rZj-1M-Clq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSignUpUser:" destination="Cql-Tr-WmA" eventType="touchUpInside" id="TaY-Ki-w6N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SC0-c9-Geo">
+                                <rect key="frame" x="169" y="465" width="257" height="51"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="4N9-Lw-oEY"/>
+                                    <constraint firstAttribute="width" constant="257" id="ORH-yf-X49"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.20784313725490197" green="0.63921568627450975" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pCI-sr-uV1" kind="unwind" unwindAction="cancelSignUpUser:" id="ZdQ-Qh-qpP"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cS-8N-TZc">
+                                <rect key="frame" x="169" y="183" width="257" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="nbc-hg-Ob9"/>
+                                    <constraint firstAttribute="height" constant="1" id="sXK-eA-8uw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YfM-89-QYt">
+                                <rect key="frame" x="169" y="257" width="257" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="IeP-0Y-OoA"/>
+                                    <constraint firstAttribute="height" constant="1" id="uED-SD-KKG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dX7-LL-VMH">
+                                <rect key="frame" x="169" y="331" width="257" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dcw-ew-4uq"/>
+                                    <constraint firstAttribute="width" constant="257" id="y6e-ZT-mEf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-6f-DiG">
+                                <rect key="frame" x="169" y="376" width="257" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="BUb-vZ-ErC"/>
+                                    <constraint firstAttribute="height" constant="1" id="cqK-DW-eZO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jqp-6f-DiG" firstAttribute="top" secondItem="bH1-Vr-Kv1" secondAttribute="bottom" id="6F7-9V-7tm"/>
+                            <constraint firstAttribute="centerX" secondItem="hLF-8C-OyA" secondAttribute="centerX" id="7gT-Fu-7OD"/>
+                            <constraint firstAttribute="centerX" secondItem="Jzq-5v-lYr" secondAttribute="centerX" id="BWg-BU-rG9"/>
+                            <constraint firstItem="O35-Os-dDK" firstAttribute="top" secondItem="ZE3-SU-KpH" secondAttribute="bottom" constant="54" id="C3K-Ly-ZFd"/>
+                            <constraint firstItem="kzV-Nt-r9e" firstAttribute="top" secondItem="3EF-bv-A3X" secondAttribute="bottom" id="DBG-g4-DbW"/>
+                            <constraint firstAttribute="centerX" secondItem="ZE3-SU-KpH" secondAttribute="centerX" id="FhB-Nd-Nh1"/>
+                            <constraint firstItem="kzV-Nt-r9e" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SC0-c9-Geo" secondAttribute="bottom" constant="84" id="KQY-eZ-Eg1"/>
+                            <constraint firstAttribute="centerX" secondItem="YfM-89-QYt" secondAttribute="centerX" id="KoV-2y-6Hn"/>
+                            <constraint firstItem="bH1-Vr-Kv1" firstAttribute="top" secondItem="gL5-qF-wsT" secondAttribute="bottom" constant="15" id="Lsd-34-dE9"/>
+                            <constraint firstItem="3EF-bv-A3X" firstAttribute="leading" secondItem="uBQ-gg-ZSU" secondAttribute="leadingMargin" constant="-16" id="MUO-rS-X6H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3EF-bv-A3X" secondAttribute="trailing" constant="-16" id="RoL-1l-79l"/>
+                            <constraint firstItem="Jzq-5v-lYr" firstAttribute="top" secondItem="bH1-Vr-Kv1" secondAttribute="bottom" constant="19" id="V8U-dI-h1b"/>
+                            <constraint firstAttribute="centerX" secondItem="bH1-Vr-Kv1" secondAttribute="centerX" id="Yha-WT-WKc"/>
+                            <constraint firstAttribute="centerX" secondItem="jqp-6f-DiG" secondAttribute="centerX" id="Z7m-wB-axy"/>
+                            <constraint firstItem="gL5-qF-wsT" firstAttribute="top" secondItem="NUE-s6-FuX" secondAttribute="bottom" constant="8" id="Zef-HW-CTI"/>
+                            <constraint firstItem="cJ1-BX-Xd3" firstAttribute="top" secondItem="O35-Os-dDK" secondAttribute="bottom" constant="8" id="aZE-ej-iGT"/>
+                            <constraint firstItem="ZE3-SU-KpH" firstAttribute="top" secondItem="lHj-OA-5nJ" secondAttribute="bottom" constant="29" id="b7Q-6q-X9E"/>
+                            <constraint firstItem="4cU-qi-1d0" firstAttribute="top" secondItem="hLF-8C-OyA" secondAttribute="bottom" constant="8" id="brd-7i-kKC"/>
+                            <constraint firstAttribute="centerX" secondItem="gL5-qF-wsT" secondAttribute="centerX" id="c5i-nX-HKu"/>
+                            <constraint firstItem="dX7-LL-VMH" firstAttribute="top" secondItem="gL5-qF-wsT" secondAttribute="bottom" id="cuJ-VD-3le"/>
+                            <constraint firstItem="NUE-s6-FuX" firstAttribute="top" secondItem="4cU-qi-1d0" secondAttribute="bottom" constant="15" id="ert-JM-e8B"/>
+                            <constraint firstItem="3cS-8N-TZc" firstAttribute="top" secondItem="cJ1-BX-Xd3" secondAttribute="bottom" id="erv-Hf-rsq"/>
+                            <constraint firstAttribute="centerX" secondItem="ZE3-SU-KpH" secondAttribute="centerX" id="g7V-r9-UYr"/>
+                            <constraint firstItem="YfM-89-QYt" firstAttribute="top" secondItem="4cU-qi-1d0" secondAttribute="bottom" id="gSt-YS-7tl"/>
+                            <constraint firstAttribute="centerX" secondItem="3cS-8N-TZc" secondAttribute="centerX" id="gcO-99-Cmu"/>
+                            <constraint firstItem="3EF-bv-A3X" firstAttribute="top" secondItem="uBQ-gg-ZSU" secondAttribute="topMargin" id="jZV-hu-tLN"/>
+                            <constraint firstItem="hLF-8C-OyA" firstAttribute="top" secondItem="cJ1-BX-Xd3" secondAttribute="bottom" constant="15" id="kSd-Ai-SBT"/>
+                            <constraint firstAttribute="centerX" secondItem="cJ1-BX-Xd3" secondAttribute="centerX" id="kwF-KF-Zij"/>
+                            <constraint firstAttribute="centerX" secondItem="NUE-s6-FuX" secondAttribute="centerX" id="o2W-V5-w9I"/>
+                            <constraint firstAttribute="centerX" secondItem="dX7-LL-VMH" secondAttribute="centerX" id="sOk-7i-gWd"/>
+                            <constraint firstAttribute="centerX" secondItem="O35-Os-dDK" secondAttribute="centerX" id="tKv-Im-6iu"/>
+                            <constraint firstAttribute="centerX" secondItem="SC0-c9-Geo" secondAttribute="centerX" id="vzI-ko-eA8"/>
+                            <constraint firstAttribute="centerX" secondItem="4cU-qi-1d0" secondAttribute="centerX" id="xvr-qP-StC"/>
+                            <constraint firstItem="SC0-c9-Geo" firstAttribute="top" secondItem="Jzq-5v-lYr" secondAttribute="bottom" constant="19" id="yuE-z8-3nC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonDone" destination="Jzq-5v-lYr" id="fIb-UA-uxd"/>
+                        <outlet property="textFIeldConfirmPassword" destination="bH1-Vr-Kv1" id="9Hv-q5-c9I"/>
+                        <outlet property="textFieldEmail" destination="4cU-qi-1d0" id="UiW-1g-k4N"/>
+                        <outlet property="textFieldPassword" destination="gL5-qF-wsT" id="vT5-NE-lta"/>
+                        <outlet property="textFieldUsername" destination="cJ1-BX-Xd3" id="RyD-0X-2kW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7K-R9-UCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pCI-sr-uV1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1477" y="190"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background-white" width="750" height="1334"/>
+        <image name="Hexagon" width="2295" height="2472"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7gg-Mo-mhW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Add Members-->
+        <scene sceneID="Woa-ui-HD8">
+            <objects>
+                <tableViewController id="EQV-MC-3vm" customClass="BGRAddMembersToGroupTableViewController" customModule="BeGroups" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="x5E-Pf-tou">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.086274509799999996" green="0.23137254900000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="separatorInset" minX="35" minY="0.0" maxX="35" maxY="0.0"/>
+                        <color key="sectionIndexBackgroundColor" red="0.086274509799999996" green="0.23137254900000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.086274509799999996" green="0.23137254900000001" blue="0.48671048610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationLevel="2" indentationWidth="10" reuseIdentifier="UsersCell" rowHeight="60" id="DP6-CS-E6H" customClass="BGRUsersListTableViewCell" customModule="BeGroups" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DP6-CS-E6H" id="XrH-OH-UFj">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.23137254900000001" blue="0.48671048605263156" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="35" minY="0.0" maxX="35" maxY="0.0"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EQV-MC-3vm" id="4kq-yh-Tnw"/>
+                            <outlet property="delegate" destination="EQV-MC-3vm" id="xDu-R3-qso"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Members" id="dFe-4Y-b0h">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="reP-UU-d5m">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hmh-3k-2Yc">
+                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BGRAddMembersButton:" destination="EQV-MC-3vm" eventType="touchUpInside" id="1c8-Og-qrd"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <segue destination="UNX-ng-fd9" kind="unwind" unwindAction="BGRSaveInvitedPlayers:" id="4TO-nM-8Ad"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZb-AF-6WE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="UNX-ng-fd9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="456"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DrD-aB-KSQ">
+            <objects>
+                <navigationController storyboardIdentifier="addMembersViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7gg-Mo-mhW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j6i-kj-uBI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.086274509799999996" green="0.23137254900000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EQV-MC-3vm" kind="relationship" relationship="rootViewController" id="8zn-g3-sU2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJg-Wi-1ho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="449"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.93725490196078431" green="0.30196078431372547" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+</document>

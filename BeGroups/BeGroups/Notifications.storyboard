@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kS3-wE-2Kh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notifications-->
+        <scene sceneID="Io6-3O-RWG">
+            <objects>
+                <viewController id="uoA-rd-hs6" customClass="BGRNotificationsListViewController" customModule="BeGroups" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qA3-ty-DPo"/>
+                        <viewControllerLayoutGuide type="bottom" id="W7O-Tf-cyJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uM7-7V-hqN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background-white" translatesAutoresizingMaskIntoConstraints="NO" id="zP4-28-U7r">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                                <animations/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cVL-7N-ze5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.050980392159999999" green="0.23529411759999999" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationLevel="2" indentationWidth="10" reuseIdentifier="Notification" id="BVL-HH-iaP" userLabel="Notification" customClass="BGRNotificationTableViewCell" customModule="BeGroups" customModuleProvider="target">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BVL-HH-iaP" id="Iio-lL-2q8">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbo-yt-vhy">
+                                                    <rect key="frame" x="38" y="8" width="524" height="44"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="387" id="rwB-uN-p17"/>
+                                                        <constraint firstAttribute="height" constant="21" id="zTR-4Q-NLg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.95686274510000002" green="0.36470588240000001" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="rwB-uN-p17"/>
+                                                            <exclude reference="zTR-4Q-NLg"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="vbo-yt-vhy" firstAttribute="leading" secondItem="Iio-lL-2q8" secondAttribute="leadingMargin" id="4Pq-xr-WZA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vbo-yt-vhy" secondAttribute="bottom" constant="12" id="7wI-Ib-TlE"/>
+                                                <constraint firstAttribute="trailing" secondItem="vbo-yt-vhy" secondAttribute="trailing" constant="81" id="8aQ-oU-ltM"/>
+                                                <constraint firstItem="vbo-yt-vhy" firstAttribute="top" secondItem="Iio-lL-2q8" secondAttribute="topMargin" constant="11" id="Bjw-BB-TIQ"/>
+                                                <constraint firstItem="vbo-yt-vhy" firstAttribute="leading" secondItem="Iio-lL-2q8" secondAttribute="leadingMargin" id="Lkf-aZ-Rft"/>
+                                                <constraint firstItem="vbo-yt-vhy" firstAttribute="top" secondItem="Iio-lL-2q8" secondAttribute="topMargin" id="Rgi-9A-lvD"/>
+                                                <constraint firstItem="vbo-yt-vhy" firstAttribute="leading" secondItem="Iio-lL-2q8" secondAttribute="leadingMargin" constant="30" id="Xp2-yN-ZfA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vbo-yt-vhy" secondAttribute="bottom" id="ZbP-Xz-fr4"/>
+                                                <constraint firstItem="vbo-yt-vhy" firstAttribute="top" secondItem="Iio-lL-2q8" secondAttribute="topMargin" id="biw-VT-oUS"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vbo-yt-vhy" secondAttribute="bottom" id="cvw-ef-I4t"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vbo-yt-vhy" secondAttribute="trailing" constant="30" id="epJ-KG-BrD"/>
+                                                <constraint firstItem="vbo-yt-vhy" firstAttribute="bottom" secondItem="Iio-lL-2q8" secondAttribute="bottomMargin" id="hYY-M6-U1G"/>
+                                                <constraint firstItem="vbo-yt-vhy" firstAttribute="leading" secondItem="Iio-lL-2q8" secondAttribute="leading" constant="8" id="qHO-6o-tOT"/>
+                                                <constraint firstItem="vbo-yt-vhy" firstAttribute="top" secondItem="Iio-lL-2q8" secondAttribute="topMargin" id="vmO-Hs-24I"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="4Pq-xr-WZA"/>
+                                                    <exclude reference="7wI-Ib-TlE"/>
+                                                    <exclude reference="8aQ-oU-ltM"/>
+                                                    <exclude reference="Bjw-BB-TIQ"/>
+                                                    <exclude reference="Lkf-aZ-Rft"/>
+                                                    <exclude reference="Rgi-9A-lvD"/>
+                                                    <exclude reference="cvw-ef-I4t"/>
+                                                    <exclude reference="hYY-M6-U1G"/>
+                                                    <exclude reference="qHO-6o-tOT"/>
+                                                    <exclude reference="vmO-Hs-24I"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="BGRNotificationDescriptionLabel" destination="vbo-yt-vhy" id="wNE-TG-JXM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cVL-7N-ze5" firstAttribute="top" secondItem="uM7-7V-hqN" secondAttribute="topMargin" id="8LW-RC-wqY"/>
+                            <constraint firstItem="cVL-7N-ze5" firstAttribute="leading" secondItem="uM7-7V-hqN" secondAttribute="leadingMargin" constant="-16" id="GGr-u0-rHf"/>
+                            <constraint firstItem="W7O-Tf-cyJ" firstAttribute="top" secondItem="cVL-7N-ze5" secondAttribute="bottom" id="QcQ-K3-TEp"/>
+                            <constraint firstItem="cVL-7N-ze5" firstAttribute="leading" secondItem="uM7-7V-hqN" secondAttribute="leadingMargin" constant="-16" id="jQ0-Yy-hO9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cVL-7N-ze5" secondAttribute="trailing" constant="-16" id="pCP-ab-pDD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cVL-7N-ze5" secondAttribute="trailing" constant="-16" id="shN-JC-pxU"/>
+                            <constraint firstItem="cVL-7N-ze5" firstAttribute="top" secondItem="uM7-7V-hqN" secondAttribute="topMargin" id="sya-1t-g6e"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GGr-u0-rHf"/>
+                                <exclude reference="shN-JC-pxU"/>
+                                <exclude reference="sya-1t-g6e"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notifications" id="KeV-wn-Mvj"/>
+                    <connections>
+                        <outlet property="BGRNotificationsListTableView" destination="cVL-7N-ze5" id="bG6-vo-icN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlS-jU-h0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2486" y="1254"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mct-O8-d99">
+            <objects>
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="kS3-wE-2Kh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="rCL-CS-ZfO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uoA-rd-hs6" kind="relationship" relationship="rootViewController" id="JeH-fL-5X6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNs-MC-t5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786" y="1254"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background-white" width="750" height="1334"/>
+    </resources>
+</document>
